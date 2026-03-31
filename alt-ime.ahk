@@ -26,13 +26,17 @@ ToggleStartup(itemName, itemPos, menu) {
 }
 
 *~LAlt Up:: {
-    if (A_PriorKey = "LAlt")
+    if (A_PriorKey = "LAlt") {
+        Send "{Blind}{vkFF}"
         IME_SET(0)
+    }
 }
 
 *~RAlt Up:: {
-    if (A_PriorKey = "RAlt")
+    if (A_PriorKey = "RAlt") {
+        Send "{Blind}{vkFF}"
         IME_SET(1)
+    }
 }
 
 IME_SET(setState) {
